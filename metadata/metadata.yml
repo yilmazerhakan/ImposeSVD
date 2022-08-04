@@ -1,0 +1,39 @@
+metadata_version: 1
+name: 'ImposeSVD: Incrementing PureSVD for top-N recommendations for cold-start problems
+  and sparse datasets'
+description: In this paper, we introduced two novel collaborative filtering techniques
+  for recommendation systems in cases of various cold-start situations and incomplete
+  datasets. The first model establishes an asymmetric weight matrix between items
+  without using item meta-data and eradicates the disadvantages of neighborhood approaches
+  by automatic determination of threshold values. Our first model, z-scoREC, is also
+  regarded as a pure deep-learning model because it performs like a vanilla auto-encoder
+  in transforming column vectors with z-score normalization similar to batch normalization.
+  With the second model, ImposeSVD, we aimed to enhance the shortcomings of the PureSVD
+  in cases of cold-start and incomplete data by preserving its straightforward implementation
+  and non-parametric form. The ImposeSVD model relies on the z-scoREC, produces synthetic
+  new predictions for the users by decomposing the latent factors from the imposed
+  matrix. We evaluated our method on the well-known datasets and found out that our
+  method was outperforming similar approaches in the specific scenarios including
+  recommendations for cold-start users, strength in cold-start systems, and diversification
+  of long-tail item recommendations in lists. Our z-scoREC model also outperformed
+  familiar neighbor-based approaches when operated as a recommender system and gave
+  a closer appearance to the decomposition methods despite its simple and rigid cost
+  framework.
+tags:
+- Collaborative Filtering
+- Top-N Recommendation
+- Sparsity
+- Cold-start
+- Singular Value Decomposition
+- PureSVD
+- z-score
+authors:
+- name: Hakan YILMAZER
+  affiliations:
+  - name: Cukurova University
+- name: Selma Ayşe ÖZEL
+  affiliations:
+  - name: Cukurova University
+corresponding_contributor:
+  name: Hakan YILMAZER
+  email: yilmazerhakan@gmail.com
